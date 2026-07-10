@@ -22,9 +22,10 @@ def time_reverse(n, x):
             y[i] = x[j[0]]          # y at ni = x at -ni
     return y
 
-def time_reverse_easy(n,x):
-    return x[::-1]
-
+def reverse_new_axis(n, x):
+    n_new = -n[::-1]     # the true reversed index set
+    x_new = x[::-1]      # values flip to match
+    return n_new, x_new
 
 #For understanding but don't use this. but also works with non uniform sampling(time array) 
 def time_shift(n, x, k):
