@@ -134,4 +134,3 @@ def transform(n, x, alpha, beta, gap='zero'):
         return np.interp(src, n, x, left=0.0, right=0.0)
     raise ValueError("gap must be 'zero', 'nearest', 'avg', or 'interp'")
 
-
