@@ -22,6 +22,15 @@ def time_reverse(n, x):
             y[i] = x[j[0]]          # y at ni = x at -ni
     return y
 
+
+def time_reverse(n, x):
+    def sample(idx):                     # x at index values, 0 if outside window
+        v = np.zeros(len(idx))
+        ok = (idx >= n[0]) & (idx <= n[-1])
+        v[ok] = x[idx[ok] - n[0]]
+        return v
+    return sample(-n)                     # y[n] = x[-n]
+
 def reverse_new_axis(n, x):
     n_new = -n[::-1]     # the true reversed index set
     x_new = x[::-1]      # values flip to match
