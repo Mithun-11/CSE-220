@@ -113,3 +113,39 @@ def x_at_continuous(t, x, tq):
     or out of range. Interpolates between samples; 0 outside the range.
     """
     return np.interp(tq, t, x, left=0.0, right=0.0)
+
+import numpy as np
+
+
+def x_at_continuous(t, x, tq, gap='interp'):
+    """
+    x(tq) for a continuous signal sampled on grid t.
+    gap = how to get the value when tq lands BETWEEN grid samples:
+      'interp'  -> linear interpolation, distance-weighted   (default, correct)
+      'avg'     -> flat 50/50 of the two neighbouring samples
+      'nearest' -> snap to the closest grid sample
+      'zero'    -> only exact grid hits are valid, else 0
+    Returns 0 for any tq outside the grid.
+    """
+    tq = np.atleast_1d(np.asarray(tq, dtype=float))
+    dt = t[1] - t[0]                       # uniform grid spacing
+    p  = (tq - t[0]) / dt                  # fractional position on the grid
+
+    lo   = np.clip(np.floor(p).astype(int), 0, len(t) - 2)   # left neighbour
+    hi   = lo + 1                                            # right neighbour
+    frac = np.clip(p - lo, 0.0, 1.0)                         # how far past lo (0..1)
+
+    if gap == 'interp':
+        y = x[lo] * (1 - frac) + x[hi] * frac
+    elif gap == 'avg':
+        y = np.where(np.isclose(frac, 0.0), x[lo], 0.5 * (x[lo] + x[hi]))
+    elif gap == 'nearest':
+        y = np.where(frac < 0.5, x[lo], x[hi])
+    elif gap == 'zero':
+        y = np.where(np.isclose(frac, 0.0), x[lo], 0.0)
+    else:
+        raise ValueError("gap must be 'interp', 'avg', 'nearest', or 'zero'")
+
+    inside = (tq >= t[0]) & (tq <= t[-1])   # outside the grid -> 0
+    y = np.where(inside, y, 0.0)
+    return y if y.size > 1 else y[0]
