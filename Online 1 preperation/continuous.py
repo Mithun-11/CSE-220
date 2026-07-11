@@ -98,3 +98,18 @@ def my_interp_only_continuous(tq, t, x):
 
     inside = (tq >= t[0]) & (tq <= t[-1])       # queries outside -> 0
     return np.where(inside, y, 0.0)
+
+
+
+
+
+
+
+
+def x_at_continuous(t, x, tq):
+    """
+    x(tq) for a continuous signal sampled on grid t.
+    tq may be a scalar or an array, and may be negative, fractional,
+    or out of range. Interpolates between samples; 0 outside the range.
+    """
+    return np.interp(tq, t, x, left=0.0, right=0.0)

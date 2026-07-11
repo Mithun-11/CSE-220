@@ -141,3 +141,15 @@ def interp_manual(n, x, alpha, beta, gap='interp'):
     y = sample(lo) * (1 - frac) + sample(hi) * frac  # distance-weighted blend
     inside = (src >= n[0]) & (src <= n[-1])          # src itself must be in range
     return np.where(inside, y, 0.0)
+
+def x_at_discrete(n, x, k):
+    """
+    x[k] for a discrete signal defined on index array n.
+    k may be a scalar or an array, and may be negative or out of range.
+    Returns 0 for any index not on the axis.
+    """
+    k = np.atleast_1d(np.asarray(k))
+    v = np.zeros(len(k), dtype=float)
+    ok = (k >= n[0]) & (k <= n[-1])       # is this index on our axis?
+    v[ok] = x[k[ok] - n[0]]               # index value -> array position
+    return v if v.size > 1 else v[0]
