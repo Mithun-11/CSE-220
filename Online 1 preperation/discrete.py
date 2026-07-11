@@ -144,3 +144,23 @@ def transform(n, x, alpha, beta, gap='zero'):
         return np.interp(src, n, x, left=0.0, right=0.0)
     raise ValueError("gap must be 'zero', 'nearest', 'avg', or 'interp'")
 
+
+def interp_manual(n, x, alpha, beta, gap='interp'):
+    """
+    y[n] = x[alpha*n + beta], using manual linear interpolation
+    (no np.interp). Same 5 parameters as transform().
+    """
+    def sample(idx):                                 # x at index values, 0 if outside
+        v = np.zeros(len(idx))
+        ok = (idx >= n[0]) & (idx <= n[-1])
+        v[ok] = x[idx[ok] - n[0]]
+        return v
+
+    src = alpha * n + beta                           # source index (may be fractional)
+    lo = np.floor(src).astype(int)                   # integer below src
+    hi = np.ceil(src).astype(int)                    # integer above src
+    frac = src - lo                                  # how far past lo (0..1)
+
+    y = sample(lo) * (1 - frac) + sample(hi) * frac  # distance-weighted blend
+    inside = (src >= n[0]) & (src <= n[-1])          # src itself must be in range
+    return np.where(inside, y, 0.0)
