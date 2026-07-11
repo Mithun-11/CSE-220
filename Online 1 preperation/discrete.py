@@ -10,17 +10,7 @@ def x_of_n(n):
     xn[m] = 4 - n[m] # 4,3,2,1,0 at n=0..4
     return xn
 
-def time_reverse(n, x):
-    """
-    Given a discrete signal x defined on index array n,
-    return the reversed signal y[n] = x[-n] on the SAME index array n.
-    """
-    y = np.zeros_like(x, dtype=float)
-    for i, ni in enumerate(n):
-        j = np.where(n == -ni)[0]   # find where index -ni sits in n
-        if len(j):                  # if -ni is inside our window
-            y[i] = x[j[0]]          # y at ni = x at -ni
-    return y
+
 
 
 def time_reverse(n, x):
@@ -36,20 +26,7 @@ def reverse_new_axis(n, x):
     x_new = x[::-1]      # values flip to match
     return n_new, x_new
 
-#For understanding but don't use this. but also works with non uniform sampling(time array) 
-def time_shift(n, x, k):
-    """
-    Shift a discrete signal by k:  y[n] = x[n - k]  on the same index array n.
-    k > 0 -> delay (moves right).   k < 0 -> advance (moves left).
-    """
-    y = np.zeros_like(x, dtype=float)
-    for i, ni in enumerate(n):
-        src = ni - k                    # index we need from x
-        j = np.where(n == src)[0]       # where does src sit in n?
-        if len(j):                      # if it's inside our window
-            y[i] = x[j[0]]
-        # else: leave 0 (shifted-in from outside)
-    return y
+
 
 #use this one
 def time_shift_signal(x, k):
