@@ -10,17 +10,7 @@ def x_of_n(n):
     xn[m] = 4 - n[m] # 4,3,2,1,0 at n=0..4
     return xn
 
-def time_reverse(n, x):
-    """
-    Given a discrete signal x defined on index array n,
-    return the reversed signal y[n] = x[-n] on the SAME index array n.
-    """
-    y = np.zeros_like(x, dtype=float)
-    for i, ni in enumerate(n):
-        j = np.where(n == -ni)[0]   # find where index -ni sits in n
-        if len(j):                  # if -ni is inside our window
-            y[i] = x[j[0]]          # y at ni = x at -ni
-    return y
+
 
 
 def time_reverse(n, x):
@@ -36,20 +26,7 @@ def reverse_new_axis(n, x):
     x_new = x[::-1]      # values flip to match
     return n_new, x_new
 
-#For understanding but don't use this. but also works with non uniform sampling(time array) 
-def time_shift(n, x, k):
-    """
-    Shift a discrete signal by k:  y[n] = x[n - k]  on the same index array n.
-    k > 0 -> delay (moves right).   k < 0 -> advance (moves left).
-    """
-    y = np.zeros_like(x, dtype=float)
-    for i, ni in enumerate(n):
-        src = ni - k                    # index we need from x
-        j = np.where(n == src)[0]       # where does src sit in n?
-        if len(j):                      # if it's inside our window
-            y[i] = x[j[0]]
-        # else: leave 0 (shifted-in from outside)
-    return y
+
 
 #use this one
 def time_shift_signal(x, k):
@@ -144,3 +121,35 @@ def transform(n, x, alpha, beta, gap='zero'):
         return np.interp(src, n, x, left=0.0, right=0.0)
     raise ValueError("gap must be 'zero', 'nearest', 'avg', or 'interp'")
 
+
+def interp_manual(n, x, alpha, beta, gap='interp'):
+    """
+    y[n] = x[alpha*n + beta], using manual linear interpolation
+    (no np.interp). Same 5 parameters as transform().
+    """
+    def sample(idx):                                 # x at index values, 0 if outside
+        v = np.zeros(len(idx))
+        ok = (idx >= n[0]) & (idx <= n[-1])
+        v[ok] = x[idx[ok] - n[0]]
+        return v
+
+    src = alpha * n + beta                           # source index (may be fractional)
+    lo = np.floor(src).astype(int)                   # integer below src
+    hi = np.ceil(src).astype(int)                    # integer above src
+    frac = src - lo                                  # how far past lo (0..1)
+
+    y = sample(lo) * (1 - frac) + sample(hi) * frac  # distance-weighted blend
+    inside = (src >= n[0]) & (src <= n[-1])          # src itself must be in range
+    return np.where(inside, y, 0.0)
+
+def x_at_discrete(n, x, k):
+    """
+    x[k] for a discrete signal defined on index array n.
+    k may be a scalar or an array, and may be negative or out of range.
+    Returns 0 for any index not on the axis.
+    """
+    k = np.atleast_1d(np.asarray(k))
+    v = np.zeros(len(k), dtype=float)
+    ok = (k >= n[0]) & (k <= n[-1])       # is this index on our axis?
+    v[ok] = x[k[ok] - n[0]]               # index value -> array position
+    return v if v.size > 1 else v[0]
