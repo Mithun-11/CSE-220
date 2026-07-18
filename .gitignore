@@ -1,0 +1,8 @@
+# LaTeX build files
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+
+# VS Code / SyncTeX files (used for clicking the PDF to jump to code)
+*.synctex.gz
