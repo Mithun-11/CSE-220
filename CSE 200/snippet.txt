@@ -1,0 +1,14 @@
+\begin{figure}[htbp!] % h: here, t: top, b: bottom, p: page, !: force
+    \centering
+    \includegraphics[
+        width=0.8\textwidth,   % Sets width to 80% of the text width
+        height=5cm,            % Sets a specific absolute height (optional)
+        keepaspectratio=true,  % Prevents the image from stretching/squishing
+        angle=0,               % Rotates the image in degrees (e.g., 90)
+        scale=1.0              % Multiplies the original image size
+    ]{your_image_file.png}     % Replace with your actual filename
+    
+    \caption{Write your descriptive caption here.}
+    \label{fig:your_custom_label} % Used for referencing in text (e.g., \ref{...})
+\end{figure}
+

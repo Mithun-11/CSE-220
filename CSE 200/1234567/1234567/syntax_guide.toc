@@ -1,0 +1,26 @@
+\contentsline {section}{\numberline {1}How the whole document is put together}{1}{section.1}%
+\contentsline {section}{\numberline {2}The document class and packages}{1}{section.2}%
+\contentsline {subsection}{\numberline {2.1}\texttt {\textbackslash documentclass}}{1}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}\texttt {\textbackslash usepackage} --- loading add-ons}{2}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}\texttt {\textbackslash graphicspath}}{2}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Preamble settings and custom shortcuts}{2}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Turning off ACM boilerplate}{2}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}\texttt {\textbackslash newcommand} --- making your own shortcut}{3}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}\texttt {\textbackslash renewcommand} and \texttt {\textbackslash let}}{3}{subsection.3.3}%
+\contentsline {section}{\numberline {4}The title block (authors, abstract, title)}{3}{section.4}%
+\contentsline {section}{\numberline {5}Section headings and cross-references}{4}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Headings}{4}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Labels and references}{4}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Citations and the \texttt {\~{}} symbol}{4}{subsection.5.3}%
+\contentsline {section}{\numberline {6}Formatting text and special characters}{5}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Font styles}{5}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Characters that need special handling}{5}{subsection.6.2}%
+\contentsline {section}{\numberline {7}Math and equations}{5}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Inline math}{5}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Displayed, numbered equations}{6}{subsection.7.2}%
+\contentsline {section}{\numberline {8}Bulleted lists}{6}{section.8}%
+\contentsline {section}{\numberline {9}Figures (inserting images)}{6}{section.9}%
+\contentsline {section}{\numberline {10}Tables}{7}{section.10}%
+\contentsline {section}{\numberline {11}The algorithm block}{8}{section.11}%
+\contentsline {section}{\numberline {12}The bibliography (references)}{8}{section.12}%
+\contentsline {section}{\numberline {13}The three fixes we made (in case your teacher asks)}{9}{section.13}%

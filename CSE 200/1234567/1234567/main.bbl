@@ -1,0 +1,749 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{57}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{} and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showURL}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showURL #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[sha(2023)]%
+        {sharegpt2023}
+ \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{{ShareGPT}}.
+\newblock
+  \bibinfo{howpublished}{\url{https://huggingface.co/datasets/anon8231489123/ShareGPT_Vicuna_unfiltered}}.
+\newblock
+\shownote{Accessed: 2025-01-15}.
+\newblock
+
+
+\bibitem[Agrawal et~al\mbox{.}(2024)]%
+        {agrawal2024sarathi}
+\bibfield{author}{\bibinfo{person}{Amey Agrawal}, \bibinfo{person}{Nitin
+  Kedia}, \bibinfo{person}{Ashish Panwar}, \bibinfo{person}{Jayashree Mohan},
+  \bibinfo{person}{Nipun Kwatra}, \bibinfo{person}{Bhargav~S. Gulavani},
+  \bibinfo{person}{Alexey Tumanov}, {and} \bibinfo{person}{Ramachandran
+  Ramjee}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Taming Throughput-Latency Tradeoff in {LLM}
+  Inference with {Sarathi-Serve}}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:2403.02310}}
+  (\bibinfo{year}{2024}).
+\newblock
+
+
+\bibitem[Agrawal et~al\mbox{.}(2023)]%
+        {agrawal2023sarathi}
+\bibfield{author}{\bibinfo{person}{Amey Agrawal}, \bibinfo{person}{Ashish
+  Panwar}, \bibinfo{person}{Jayashree Mohan}, \bibinfo{person}{Nipun Kwatra},
+  \bibinfo{person}{Bhargav~S. Gulavani}, {and} \bibinfo{person}{Ramachandran
+  Ramjee}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Sarathi: Efficient {LLM} Inference by Piggybacking
+  Decodes with Chunked Prefills}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:2308.16369}}
+  (\bibinfo{year}{2023}).
+\newblock
+
+
+\bibitem[Ainslie et~al\mbox{.}(2023)]%
+        {ainslie2023gqa}
+\bibfield{author}{\bibinfo{person}{Joshua Ainslie}, \bibinfo{person}{James
+  Lee-Thorp}, \bibinfo{person}{Michiel de Jong}, \bibinfo{person}{Yury
+  Zemlyanskiy}, \bibinfo{person}{Federico Lebron}, {and} \bibinfo{person}{Sumit
+  Sanghai}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{{GQA}: Training Generalized Multi-Query Transformer
+  Models from Multi-Head Checkpoints}. In \bibinfo{booktitle}{\emph{Proceedings
+  of the 2023 Conference on Empirical Methods in Natural Language Processing}}.
+  \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{address}{Singapore}, \bibinfo{pages}{4895--4901}.
+\newblock
+
+
+\bibitem[{Alibaba Cloud}(2024)]%
+        {cloud2024qwen2}
+\bibfield{author}{\bibinfo{person}{{Alibaba Cloud}}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{Alibaba Cloud's {Qwen2} with Enhanced Capabilities
+  Tops {LLM} Leaderboard}.
+\newblock \bibinfo{howpublished}{\url{https://www.alibabacloud.com/blog/}}.
+\newblock
+
+
+\bibitem[Ba et~al\mbox{.}(2016)]%
+        {ba2016layernorm}
+\bibfield{author}{\bibinfo{person}{Jimmy~Lei Ba}, \bibinfo{person}{Jamie~Ryan
+  Kiros}, {and} \bibinfo{person}{Geoffrey~E. Hinton}.}
+  \bibinfo{year}{2016}\natexlab{}.
+\newblock \bibinfo{title}{Layer Normalization}.
+\newblock
+\showeprint[arxiv]{1607.06450}
+
+
+\bibitem[Brown et~al\mbox{.}(2020)]%
+        {brown2020language}
+\bibfield{author}{\bibinfo{person}{Tom Brown}, \bibinfo{person}{Benjamin Mann},
+  \bibinfo{person}{Nick Ryder}, \bibinfo{person}{Melanie Subbiah},
+  \bibinfo{person}{Jared~D. Kaplan}, \bibinfo{person}{Prafulla Dhariwal},
+  \bibinfo{person}{Arvind Neelakantan}, \bibinfo{person}{Pranav Shyam},
+  \bibinfo{person}{Girish Sastry}, \bibinfo{person}{Amanda Askell},
+  {et~al\mbox{.}}} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Language Models are Few-Shot Learners}.
+\newblock \bibinfo{journal}{\emph{Advances in Neural Information Processing
+  Systems}}  \bibinfo{volume}{33} (\bibinfo{year}{2020}),
+  \bibinfo{pages}{1877--1901}.
+\newblock
+
+
+\bibitem[Brysbaert(2019)]%
+        {brysbaert2019reading}
+\bibfield{author}{\bibinfo{person}{Marc Brysbaert}.}
+  \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{How Many Words Do We Read Per Minute? A Review and
+  Meta-Analysis of Reading Rate}.
+\newblock \bibinfo{journal}{\emph{Journal of Memory and Language}}
+  \bibinfo{volume}{109} (\bibinfo{year}{2019}), \bibinfo{pages}{104047}.
+\newblock
+
+
+\bibitem[Elfwing et~al\mbox{.}(2017)]%
+        {elfwing2017sigmoid}
+\bibfield{author}{\bibinfo{person}{Stefan Elfwing}, \bibinfo{person}{Eiji
+  Uchibe}, {and} \bibinfo{person}{Kenji Doya}.}
+  \bibinfo{year}{2017}\natexlab{}.
+\newblock \bibinfo{title}{Sigmoid-Weighted Linear Units for Neural Network
+  Function Approximation in Reinforcement Learning}.
+\newblock
+\showeprint[arxiv]{1702.03118}
+
+
+\bibitem[Griffith(2023)]%
+        {griffith2023hunt}
+\bibfield{author}{\bibinfo{person}{Erin Griffith}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{The Desperate Hunt for the {A.I.} Boom's
+  Most Indispensable Prize}}.
+\newblock \bibinfo{type}{{T}echnical {R}eport}. \bibinfo{institution}{The New
+  York Times}.
+\newblock
+
+
+\bibitem[He et~al\mbox{.}(2022)]%
+        {he2022fastermoe}
+\bibfield{author}{\bibinfo{person}{Jiaao He}, \bibinfo{person}{Jidong Zhai},
+  \bibinfo{person}{Tiago Antunes}, \bibinfo{person}{Haojie Wang},
+  \bibinfo{person}{Fuwen Luo}, \bibinfo{person}{Shangfeng Shi}, {and}
+  \bibinfo{person}{Qin Li}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{{FasterMoE}: Modeling and Optimizing Training of
+  Large-Scale Dynamic Pre-Trained Models}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 27th ACM SIGPLAN Symposium on
+  Principles and Practice of Parallel Programming}}
+  \emph{(\bibinfo{series}{PPoPP '22})}. \bibinfo{publisher}{Association for
+  Computing Machinery}, \bibinfo{address}{New York, NY, USA},
+  \bibinfo{pages}{120--134}.
+\newblock
+
+
+\bibitem[Holmes et~al\mbox{.}(2024)]%
+        {holmes2024deepspeed}
+\bibfield{author}{\bibinfo{person}{Connor Holmes}, \bibinfo{person}{Masahiro
+  Tanaka}, \bibinfo{person}{Michael Wyatt}, \bibinfo{person}{Ammar~Ahmad Awan},
+  \bibinfo{person}{Jeff Rasley}, \bibinfo{person}{Samyam Rajbhandari},
+  \bibinfo{person}{Reza~Yazdani Aminabadi}, \bibinfo{person}{Heyang Qin},
+  \bibinfo{person}{Arash Bakhtiari}, \bibinfo{person}{Lev Kurilenko},
+  {et~al\mbox{.}}} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{{DeepSpeed-FastGen}: High-Throughput Text
+  Generation for {LLMs} via {MII} and {DeepSpeed-Inference}}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:2401.08671}}
+  (\bibinfo{year}{2024}).
+\newblock
+
+
+\bibitem[Huang et~al\mbox{.}(2019)]%
+        {huang2019gpipe}
+\bibfield{author}{\bibinfo{person}{Yanping Huang}, \bibinfo{person}{Youlong
+  Cheng}, \bibinfo{person}{Ankur Bapna}, \bibinfo{person}{Orhan Firat},
+  \bibinfo{person}{Mia~Xu Chen}, \bibinfo{person}{Dehao Chen},
+  \bibinfo{person}{HyoukJoong Lee}, \bibinfo{person}{Jiquan Ngiam},
+  \bibinfo{person}{Quoc~V. Le}, \bibinfo{person}{Yonghui Wu}, {and}
+  \bibinfo{person}{Zhifeng Chen}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \bibinfo{title}{{GPipe}: Efficient Training of Giant Neural Networks
+  using Pipeline Parallelism}.
+\newblock
+\showeprint[arxiv]{1811.06965}
+
+
+\bibitem[Jain et~al\mbox{.}(2025)]%
+        {jain2025router}
+\bibfield{author}{\bibinfo{person}{Kunal Jain}, \bibinfo{person}{Anjaly
+  Parayil}, \bibinfo{person}{Ankur Mallick}, \bibinfo{person}{Esha Choukse},
+  \bibinfo{person}{Xiaoting Qin}, \bibinfo{person}{Jue Zhang},
+  \bibinfo{person}{{\'I}{\~n}igo Goiri}, \bibinfo{person}{Rujia Wang},
+  \bibinfo{person}{Chetan Bansal}, \bibinfo{person}{Victor R{\"u}hle},
+  \bibinfo{person}{Anoop Kulkarni}, \bibinfo{person}{Steve Kofsky}, {and}
+  \bibinfo{person}{Saravan Rajmohan}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \bibinfo{title}{Intelligent Router for {LLM} Workloads: Improving
+  Performance through Workload-Aware Load Balancing}.
+\newblock
+
+
+\bibitem[Jiang et~al\mbox{.}(2023)]%
+        {jiang2023mistral}
+\bibfield{author}{\bibinfo{person}{Albert~Q. Jiang}, \bibinfo{person}{Alexandre
+  Sablayrolles}, \bibinfo{person}{Arthur Mensch}, \bibinfo{person}{Chris
+  Bamford}, \bibinfo{person}{Devendra~Singh Chaplot}, \bibinfo{person}{Diego
+  de~las Casas}, \bibinfo{person}{Florian Bressand}, \bibinfo{person}{Gianna
+  Lengyel}, \bibinfo{person}{Guillaume Lample}, \bibinfo{person}{Lucile
+  Saulnier}, {et~al\mbox{.}}} \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{Mistral 7B}.
+\newblock
+\showeprint[arxiv]{2310.06825}
+
+
+\bibitem[Kwon et~al\mbox{.}(2023)]%
+        {kwon2023efficient}
+\bibfield{author}{\bibinfo{person}{Woosuk Kwon}, \bibinfo{person}{Zhuohan Li},
+  \bibinfo{person}{Siyuan Zhuang}, \bibinfo{person}{Ying Sheng},
+  \bibinfo{person}{Lianmin Zheng}, \bibinfo{person}{Cody~Hao Yu},
+  \bibinfo{person}{Joseph Gonzalez}, \bibinfo{person}{Hao Zhang}, {and}
+  \bibinfo{person}{Ion Stoica}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Efficient Memory Management for Large Language
+  Model Serving with {PagedAttention}}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 29th Symposium on Operating
+  Systems Principles}}. \bibinfo{pages}{611--626}.
+\newblock
+
+
+\bibitem[Li et~al\mbox{.}(2023)]%
+        {li2023alpaserve}
+\bibfield{author}{\bibinfo{person}{Zhuohan Li}, \bibinfo{person}{Lianmin
+  Zheng}, \bibinfo{person}{Yinmin Zhong}, \bibinfo{person}{Vincent Liu},
+  \bibinfo{person}{Ying Sheng}, \bibinfo{person}{Xin Jin},
+  \bibinfo{person}{Yanping Huang}, \bibinfo{person}{Zhifeng Chen},
+  \bibinfo{person}{Hao Zhang}, \bibinfo{person}{Joseph~E. Gonzalez},
+  {et~al\mbox{.}}} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{{AlpaServe}: Statistical Multiplexing with Model
+  Parallelism for Deep Learning Serving}. In \bibinfo{booktitle}{\emph{17th
+  USENIX Symposium on Operating Systems Design and Implementation (OSDI 23)}}.
+  \bibinfo{pages}{663--679}.
+\newblock
+
+
+\bibitem[Lin et~al\mbox{.}(2024)]%
+        {lin2024qserve}
+\bibfield{author}{\bibinfo{person}{Yujun Lin}, \bibinfo{person}{Haotian Tang},
+  \bibinfo{person}{Shang Yang}, \bibinfo{person}{Zhekai Zhang},
+  \bibinfo{person}{Guangxuan Xiao}, \bibinfo{person}{Chuang Gan}, {and}
+  \bibinfo{person}{Song Han}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{{QServe}: {W4A8KV4} Quantization and System Co-design
+  for Efficient {LLM} Serving}.
+\newblock
+\showeprint[arxiv]{2405.04532}
+
+
+\bibitem[Ma et~al\mbox{.}(2020)]%
+        {ma2020rammer}
+\bibfield{author}{\bibinfo{person}{Lingxiao Ma}, \bibinfo{person}{Zhiqiang
+  Xie}, \bibinfo{person}{Zhi Yang}, \bibinfo{person}{Jilong Xue},
+  \bibinfo{person}{Youshan Miao}, \bibinfo{person}{Wei Cui},
+  \bibinfo{person}{Wenxiang Hu}, \bibinfo{person}{Fan Yang},
+  \bibinfo{person}{Lintao Zhang}, {and} \bibinfo{person}{Lidong Zhou}.}
+  \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Rammer: Enabling Holistic Deep Learning Compiler
+  Optimizations with {rTasks}}. In \bibinfo{booktitle}{\emph{14th USENIX
+  Symposium on Operating Systems Design and Implementation (OSDI 20)}}.
+  \bibinfo{publisher}{USENIX Association}, \bibinfo{pages}{881--897}.
+\newblock
+
+
+\bibitem[Mehdi(2023)]%
+        {mehdi2023bing}
+\bibfield{author}{\bibinfo{person}{Yusuf Mehdi}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{Reinventing Search with a New {AI}-Powered {Microsoft
+  Bing} and {Edge}, Your Copilot for the Web}.
+\newblock
+
+
+\bibitem[{Meta}(2024)]%
+        {meta2024llama3}
+\bibfield{author}{\bibinfo{person}{{Meta}}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{Build the Future of {AI} with {Meta Llama 3}}.
+\newblock \bibinfo{howpublished}{\url{https://llama.meta.com/llama3/}}.
+\newblock
+
+
+\bibitem[{Microsoft}(2024)]%
+        {microsoft2024fastgen}
+\bibfield{author}{\bibinfo{person}{{Microsoft}}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{{DeepSpeed}: {FastGen}}.
+\newblock
+  \bibinfo{howpublished}{\url{https://github.com/microsoft/DeepSpeed/tree/429bc5c/blogs/deepspeed-fastgen}}.
+\newblock
+\shownote{Commit ID: 429bc5c, Accessed: 2024-12-09}.
+\newblock
+
+
+\bibitem[{Mistral AI}(2024)]%
+        {mistral2024nemo}
+\bibfield{author}{\bibinfo{person}{{Mistral AI}}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{Mistral {NeMo}}.
+\newblock \bibinfo{howpublished}{\url{https://mistral.ai/news/mistral-nemo/}}.
+\newblock
+
+
+\bibitem[{NVIDIA}(2024a)]%
+        {nvidia2024nvlink}
+\bibfield{author}{\bibinfo{person}{{NVIDIA}}.}
+  \bibinfo{year}{2024}\natexlab{a}.
+\newblock \bibinfo{title}{{NVLink} and {NVLink} Switch}.
+\newblock
+  \bibinfo{howpublished}{\url{https://www.nvidia.com/en-us/data-center/nvlink/}}.
+\newblock
+
+
+\bibitem[{NVIDIA}(2024b)]%
+        {nvidia2024tensorrt}
+\bibfield{author}{\bibinfo{person}{{NVIDIA}}.}
+  \bibinfo{year}{2024}\natexlab{b}.
+\newblock \bibinfo{title}{{TensorRT-LLM}}.
+\newblock \bibinfo{howpublished}{\url{https://github.com/NVIDIA/TensorRT-LLM}}.
+\newblock
+
+
+\bibitem[{NVIDIA}(2024c)]%
+        {nvidia2024trtllm}
+\bibfield{author}{\bibinfo{person}{{NVIDIA}}.}
+  \bibinfo{year}{2024}\natexlab{c}.
+\newblock \bibinfo{title}{{TensorRT-LLM}}.
+\newblock
+  \bibinfo{howpublished}{\url{https://github.com/NVIDIA/TensorRT-LLM/tree/5955b8a}}.
+\newblock
+\shownote{Commit ID: 5955b8a, Accessed: 2024-12-09}.
+\newblock
+
+
+\bibitem[{OpenAI}(2023)]%
+        {openai2023chatgpt}
+\bibfield{author}{\bibinfo{person}{{OpenAI}}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{Introducing {ChatGPT}}.
+\newblock
+
+
+\bibitem[{OpenAI}(2024)]%
+        {openai2024gpt4}
+\bibfield{author}{\bibinfo{person}{{OpenAI}}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{{GPT-4} Technical Report}.
+\newblock
+\showeprint[arxiv]{2303.08774}
+
+
+\bibitem[Park et~al\mbox{.}(2023)]%
+        {park2023aspen}
+\bibfield{author}{\bibinfo{person}{Jongseok Park}, \bibinfo{person}{Kyungmin
+  Bin}, \bibinfo{person}{Gibum Park}, \bibinfo{person}{Sangtae Ha}, {and}
+  \bibinfo{person}{Kyunghan Lee}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{{ASPEN}: Breaking Operator Barriers for Efficient
+  Parallelization of Deep Neural Networks}. In
+  \bibinfo{booktitle}{\emph{Advances in Neural Information Processing
+  Systems}}, Vol.~\bibinfo{volume}{36}. \bibinfo{publisher}{Curran Associates,
+  Inc.}, \bibinfo{pages}{68625--68638}.
+\newblock
+
+
+\bibitem[Patel and Ahmad(2023)]%
+        {patel2023inference}
+\bibfield{author}{\bibinfo{person}{Dylan Patel} {and} \bibinfo{person}{Afzal
+  Ahmad}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{The Inference Cost of Search Disruption -- Large
+  Language Model Cost Analysis}.
+\newblock
+
+
+\bibitem[Patel et~al\mbox{.}(2023)]%
+        {patel2023splitwise}
+\bibfield{author}{\bibinfo{person}{Pratyush Patel}, \bibinfo{person}{Esha
+  Choukse}, \bibinfo{person}{Chaojie Zhang}, \bibinfo{person}{{\'I}{\~n}igo
+  Goiri}, \bibinfo{person}{Aashaka Shah}, \bibinfo{person}{Saeed Maleki}, {and}
+  \bibinfo{person}{Ricardo Bianchini}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{Splitwise: Efficient Generative {LLM} Inference Using
+  Phase Splitting}.
+\newblock
+\showeprint[arxiv]{2311.18677}
+
+
+\bibitem[Patke et~al\mbox{.}(2025)]%
+        {patke2025chiron}
+\bibfield{author}{\bibinfo{person}{Archit Patke}, \bibinfo{person}{Dhemath
+  Reddy}, \bibinfo{person}{Saurabh Jha}, \bibinfo{person}{Chandra
+  Narayanaswami}, \bibinfo{person}{Zbigniew Kalbarczyk}, {and}
+  \bibinfo{person}{Ravishankar Iyer}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \bibinfo{title}{Hierarchical Autoscaling for Large Language Model
+  Serving with {Chiron}}.
+\newblock
+
+
+\bibitem[Pope et~al\mbox{.}(2023)]%
+        {pope2023efficiently}
+\bibfield{author}{\bibinfo{person}{Reiner Pope}, \bibinfo{person}{Sholto
+  Douglas}, \bibinfo{person}{Aakanksha Chowdhery}, \bibinfo{person}{Jacob
+  Devlin}, \bibinfo{person}{James Bradbury}, \bibinfo{person}{Jonathan Heek},
+  \bibinfo{person}{Kefan Xiao}, \bibinfo{person}{Shivani Agrawal}, {and}
+  \bibinfo{person}{Jeff Dean}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Efficiently Scaling Transformer Inference}.
+\newblock \bibinfo{journal}{\emph{Proceedings of Machine Learning and Systems}}
+   \bibinfo{volume}{5} (\bibinfo{year}{2023}).
+\newblock
+
+
+\bibitem[Roth(2024)]%
+        {roth2024chatgpt}
+\bibfield{author}{\bibinfo{person}{Emma Roth}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{{ChatGPT}'s Weekly Users Have Doubled in Less Than a
+  Year}.
+\newblock
+\shownote{Accessed: 2024-12-03}.
+\newblock
+
+
+\bibitem[Shi et~al\mbox{.}(2023)]%
+        {shi2023welder}
+\bibfield{author}{\bibinfo{person}{Yining Shi}, \bibinfo{person}{Zhi Yang},
+  \bibinfo{person}{Jilong Xue}, \bibinfo{person}{Lingxiao Ma},
+  \bibinfo{person}{Yuqing Xia}, \bibinfo{person}{Ziming Miao},
+  \bibinfo{person}{Yuxiao Guo}, \bibinfo{person}{Fan Yang}, {and}
+  \bibinfo{person}{Lidong Zhou}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Welder: Scheduling Deep Learning Memory Access via
+  Tile-Graph}. In \bibinfo{booktitle}{\emph{17th USENIX Symposium on Operating
+  Systems Design and Implementation (OSDI 23)}}. \bibinfo{publisher}{USENIX
+  Association}, \bibinfo{address}{Boston, MA}, \bibinfo{pages}{701--718}.
+\newblock
+
+
+\bibitem[Shoeybi et~al\mbox{.}(2020a)]%
+        {shoeybi2020megatron}
+\bibfield{author}{\bibinfo{person}{Mohammad Shoeybi}, \bibinfo{person}{Mostofa
+  Patwary}, \bibinfo{person}{Raul Puri}, \bibinfo{person}{Patrick LeGresley},
+  \bibinfo{person}{Jared Casper}, {and} \bibinfo{person}{Bryan Catanzaro}.}
+  \bibinfo{year}{2020}\natexlab{a}.
+\newblock \bibinfo{title}{{Megatron-LM}: Training Multi-Billion Parameter
+  Language Models Using Model Parallelism}.
+\newblock
+\showeprint[arxiv]{1909.08053}
+
+
+\bibitem[Shoeybi et~al\mbox{.}(2020b)]%
+        {shoeybi2020megatron_b}
+\bibfield{author}{\bibinfo{person}{Mohammad Shoeybi}, \bibinfo{person}{Mostofa
+  Patwary}, \bibinfo{person}{Raul Puri}, \bibinfo{person}{Patrick LeGresley},
+  \bibinfo{person}{Jared Casper}, {and} \bibinfo{person}{Bryan Catanzaro}.}
+  \bibinfo{year}{2020}\natexlab{b}.
+\newblock \bibinfo{title}{{Megatron-LM}: Training Multi-Billion Parameter
+  Language Models Using Model Parallelism}.
+\newblock
+\shownote{arXiv:1909.08053}.
+\newblock
+\showeprint[arxiv]{1909.08053v4}
+
+
+\bibitem[Singh(2024)]%
+        {singh2024statistics}
+\bibfield{author}{\bibinfo{person}{Shubham Singh}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{{ChatGPT} Statistics (AUG 2024) -- Users Growth
+  Data}.
+\newblock
+  \bibinfo{howpublished}{\url{https://www.demandsage.com/chatgpt-statistics/}}.
+\newblock
+\shownote{Accessed: 14-08-2024}.
+\newblock
+
+
+\bibitem[Spataro(2023)]%
+        {spataro2023copilot}
+\bibfield{author}{\bibinfo{person}{Jared Spataro}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{Introducing {Microsoft 365 Copilot} -- Your Copilot
+  for Work}.
+\newblock
+
+
+\bibitem[Srivatsa et~al\mbox{.}(2024)]%
+        {srivatsa2024scheduling}
+\bibfield{author}{\bibinfo{person}{Vikranth Srivatsa},
+  \bibinfo{person}{Dongming Li}, \bibinfo{person}{Yiying Zhang}, {and}
+  \bibinfo{person}{Reyna Abhyankar}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{Can Scheduling Overhead Dominate {LLM} Inference
+  Performance? A Study of {CPU} Scheduling Overhead on Two Popular {LLM}
+  Inference Systems}.
+\newblock
+  \bibinfo{howpublished}{\url{https://mlsys.wuklab.io/posts/scheduling_overhead/}}.
+\newblock
+\shownote{Accessed: 25-10-2024}.
+\newblock
+
+
+\bibitem[Strati et~al\mbox{.}(2024)]%
+        {strati2024orion}
+\bibfield{author}{\bibinfo{person}{Foteini Strati}, \bibinfo{person}{Xianzhe
+  Ma}, {and} \bibinfo{person}{Ana Klimovic}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Orion: Interference-Aware, Fine-Grained {GPU}
+  Sharing for {ML} Applications}. In \bibinfo{booktitle}{\emph{Proceedings of
+  the Nineteenth European Conference on Computer Systems}}
+  \emph{(\bibinfo{series}{EuroSys '24})}. \bibinfo{publisher}{Association for
+  Computing Machinery}, \bibinfo{address}{New York, NY, USA},
+  \bibinfo{pages}{1075--1092}.
+\newblock
+
+
+\bibitem[Tang et~al\mbox{.}(2024)]%
+        {tang2024quest}
+\bibfield{author}{\bibinfo{person}{Jiaming Tang}, \bibinfo{person}{Yilong
+  Zhao}, \bibinfo{person}{Kan Zhu}, \bibinfo{person}{Guangxuan Xiao},
+  \bibinfo{person}{Baris Kasikci}, {and} \bibinfo{person}{Song Han}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{Quest: Query-Aware Sparsity for Efficient
+  Long-Context {LLM} Inference}.
+\newblock
+\showeprint[arxiv]{2406.10774}
+
+
+\bibitem[Thakkar et~al\mbox{.}(2023)]%
+        {thakkar2023cutlass}
+\bibfield{author}{\bibinfo{person}{Vijay Thakkar}, \bibinfo{person}{Pradeep
+  Ramani}, \bibinfo{person}{Cris Cecka}, \bibinfo{person}{Aniket Shivam},
+  \bibinfo{person}{Honghao Lu}, \bibinfo{person}{Ethan Yan},
+  \bibinfo{person}{Jack Kosaian}, \bibinfo{person}{Mark Hoemmen},
+  \bibinfo{person}{Haicheng Wu}, \bibinfo{person}{Andrew Kerr},
+  {et~al\mbox{.}}} \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{{CUTLASS}}.
+\newblock
+
+
+\bibitem[{The AIBrix Team} et~al\mbox{.}(2025)]%
+        {aibrix2025}
+\bibfield{author}{\bibinfo{person}{{The AIBrix Team}}, \bibinfo{person}{Jiaxin
+  Shan}, \bibinfo{person}{Varun Gupta}, \bibinfo{person}{Le Xu},
+  \bibinfo{person}{Haiyang Shi}, \bibinfo{person}{Jingyuan Zhang},
+  \bibinfo{person}{Ning Wang}, \bibinfo{person}{Linhui Xu},
+  \bibinfo{person}{Rong Kang}, \bibinfo{person}{Tongping Liu}, {et~al\mbox{.}}}
+  \bibinfo{year}{2025}\natexlab{}.
+\newblock \bibinfo{title}{{AIBrix}: Towards Scalable, Cost-Effective Large
+  Language Model Inference Infrastructure}.
+\newblock
+
+
+\bibitem[Ting-Fang(2023)]%
+        {tingfang2023tsmc}
+\bibfield{author}{\bibinfo{person}{Cheng Ting-Fang}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{{TSMC} Sees {AI} Chip Output Constraints
+  Lasting 1.5 Years}}.
+\newblock \bibinfo{type}{{T}echnical {R}eport}. \bibinfo{institution}{Nikkei
+  Asia}.
+\newblock
+
+
+\bibitem[Touvron et~al\mbox{.}(2023a)]%
+        {touvron2023llama}
+\bibfield{author}{\bibinfo{person}{Hugo Touvron}, \bibinfo{person}{Thibaut
+  Lavril}, \bibinfo{person}{Gautier Izacard}, \bibinfo{person}{Xavier
+  Martinet}, \bibinfo{person}{Marie-Anne Lachaux},
+  \bibinfo{person}{Timoth{\'e}e Lacroix}, \bibinfo{person}{Baptiste
+  Rozi{\`e}re}, \bibinfo{person}{Naman Goyal}, \bibinfo{person}{Eric Hambro},
+  \bibinfo{person}{Faisal Azhar}, {et~al\mbox{.}}}
+  \bibinfo{year}{2023}\natexlab{a}.
+\newblock \bibinfo{title}{{LLaMA}: Open and Efficient Foundation Language
+  Models}.
+\newblock
+\showeprint[arxiv]{2302.13971}
+
+
+\bibitem[Touvron et~al\mbox{.}(2023b)]%
+        {touvron2023llama2}
+\bibfield{author}{\bibinfo{person}{Hugo Touvron}, \bibinfo{person}{Louis
+  Martin}, \bibinfo{person}{Kevin Stone}, \bibinfo{person}{Peter Albert},
+  \bibinfo{person}{Amjad Almahairi}, \bibinfo{person}{Yasmine Babaei},
+  \bibinfo{person}{Nikolay Bashlykov}, \bibinfo{person}{Soumya Batra},
+  \bibinfo{person}{Prajjwal Bhargava}, \bibinfo{person}{Shruti Bhosale},
+  {et~al\mbox{.}}} \bibinfo{year}{2023}\natexlab{b}.
+\newblock \showarticletitle{{Llama 2}: Open Foundation and Fine-Tuned Chat
+  Models}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:2307.09288}}
+  (\bibinfo{year}{2023}).
+\newblock
+
+
+\bibitem[Unger et~al\mbox{.}(2022)]%
+        {unger2022unity}
+\bibfield{author}{\bibinfo{person}{Colin Unger}, \bibinfo{person}{Zhihao Jia},
+  \bibinfo{person}{Wei Wu}, \bibinfo{person}{Sina Lin},
+  \bibinfo{person}{Mandeep Baines}, \bibinfo{person}{Carlos Efrain~Quintero
+  Narvaez}, \bibinfo{person}{Vinay Ramakrishnaiah}, \bibinfo{person}{Nirmal
+  Prajapati}, \bibinfo{person}{Pat McCormick}, \bibinfo{person}{Jamaludin
+  Mohd-Yusof}, {et~al\mbox{.}}} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Unity: Accelerating {DNN} Training Through Joint
+  Optimization of Algebraic Transformations and Parallelization}. In
+  \bibinfo{booktitle}{\emph{16th USENIX Symposium on Operating Systems Design
+  and Implementation (OSDI 22)}}. \bibinfo{publisher}{USENIX Association},
+  \bibinfo{address}{Carlsbad, CA}, \bibinfo{pages}{267--284}.
+\newblock
+
+
+\bibitem[Vaswani et~al\mbox{.}(2017)]%
+        {vaswani2017attention}
+\bibfield{author}{\bibinfo{person}{Ashish Vaswani}, \bibinfo{person}{Noam
+  Shazeer}, \bibinfo{person}{Niki Parmar}, \bibinfo{person}{Jakob Uszkoreit},
+  \bibinfo{person}{Llion Jones}, \bibinfo{person}{Aidan~N. Gomez},
+  \bibinfo{person}{{\L}ukasz Kaiser}, {and} \bibinfo{person}{Illia
+  Polosukhin}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Attention is All You Need}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 31st International Conference on
+  Neural Information Processing Systems}} \emph{(\bibinfo{series}{NIPS'17})}.
+  \bibinfo{publisher}{Curran Associates Inc.}, \bibinfo{address}{Red Hook, NY,
+  USA}, \bibinfo{pages}{6000--6010}.
+\newblock
+
+
+\bibitem[{vLLM Project}(2024)]%
+        {vllm2024}
+\bibfield{author}{\bibinfo{person}{{vLLM Project}}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{{vLLM}}.
+\newblock
+  \bibinfo{howpublished}{\url{https://github.com/vllm-project/vllm/tree/38c4b7e}}.
+\newblock
+\shownote{Commit ID: 38c4b7e, Accessed: 2024-12-09}.
+\newblock
+
+
+\bibitem[Yu et~al\mbox{.}(2022)]%
+        {yu2022orca}
+\bibfield{author}{\bibinfo{person}{Gyeong-In Yu}, \bibinfo{person}{Joo~Seong
+  Jeong}, \bibinfo{person}{Geon-Woo Kim}, \bibinfo{person}{Soojeong Kim}, {and}
+  \bibinfo{person}{Byung-Gon Chun}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Orca: A Distributed Serving System for
+  Transformer-Based Generative Models}. In \bibinfo{booktitle}{\emph{16th
+  USENIX Symposium on Operating Systems Design and Implementation (OSDI 22)}}.
+  \bibinfo{pages}{521--538}.
+\newblock
+
+
+\bibitem[Zhao et~al\mbox{.}(2024)]%
+        {zhao2024forestcoll}
+\bibfield{author}{\bibinfo{person}{Liangyu Zhao}, \bibinfo{person}{Saeed
+  Maleki}, \bibinfo{person}{Aashaka Shah}, \bibinfo{person}{Ziyue Yang},
+  \bibinfo{person}{Hossein Pourreza}, {and} \bibinfo{person}{Arvind
+  Krishnamurthy}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{{ForestColl}: Efficient Collective Communications on
+  Heterogeneous Network Fabrics}.
+\newblock
+\showeprint[arxiv]{2402.06787}
+
+
+\bibitem[Zhao et~al\mbox{.}(2023)]%
+        {zhao2023atom}
+\bibfield{author}{\bibinfo{person}{Yilong Zhao}, \bibinfo{person}{Chien-Yu
+  Lin}, \bibinfo{person}{Kan Zhu}, \bibinfo{person}{Zihao Ye},
+  \bibinfo{person}{Lequn Chen}, \bibinfo{person}{Size Zheng},
+  \bibinfo{person}{Luis Ceze}, \bibinfo{person}{Arvind Krishnamurthy},
+  \bibinfo{person}{Tianqi Chen}, {and} \bibinfo{person}{Baris Kasikci}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Atom: Low-Bit Quantization for Efficient and
+  Accurate {LLM} Serving}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:2310.19102}}
+  (\bibinfo{year}{2023}).
+\newblock
+
+
+\bibitem[Zheng et~al\mbox{.}(2023)]%
+        {zheng2023lmsys}
+\bibfield{author}{\bibinfo{person}{Lianmin Zheng}, \bibinfo{person}{Wei-Lin
+  Chiang}, \bibinfo{person}{Ying Sheng}, \bibinfo{person}{Tianle Li},
+  \bibinfo{person}{Siyuan Zhuang}, \bibinfo{person}{Zhanghao Wu},
+  \bibinfo{person}{Yonghao Zhuang}, \bibinfo{person}{Zhuohan Li},
+  \bibinfo{person}{Zi Lin}, \bibinfo{person}{Eric~P. Xing},
+  \bibinfo{person}{Joseph~E. Gonzalez}, \bibinfo{person}{Ion Stoica}, {and}
+  \bibinfo{person}{Hao Zhang}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{{LMSYS-Chat-1M}: A Large-Scale Real-World {LLM}
+  Conversation Dataset}.
+\newblock
+\showeprint[arxiv]{2309.11998}
+
+
+\bibitem[Zheng et~al\mbox{.}(2022)]%
+        {zheng2022alpa}
+\bibfield{author}{\bibinfo{person}{Lianmin Zheng}, \bibinfo{person}{Zhuohan
+  Li}, \bibinfo{person}{Hao Zhang}, \bibinfo{person}{Yonghao Zhuang},
+  \bibinfo{person}{Zhifeng Chen}, \bibinfo{person}{Yanping Huang},
+  \bibinfo{person}{Yida Wang}, \bibinfo{person}{Yuanzhong Xu},
+  \bibinfo{person}{Danyang Zhuo}, \bibinfo{person}{Eric~P. Xing},
+  {et~al\mbox{.}}} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Alpa: Automating Inter- and {Intra-Operator}
+  Parallelism for Distributed Deep Learning}. In \bibinfo{booktitle}{\emph{16th
+  USENIX Symposium on Operating Systems Design and Implementation (OSDI 22)}}.
+  \bibinfo{pages}{559--578}.
+\newblock
+
+
+\bibitem[Zheng et~al\mbox{.}(2024)]%
+        {zheng2024sglang}
+\bibfield{author}{\bibinfo{person}{Lianmin Zheng}, \bibinfo{person}{Liangsheng
+  Yin}, \bibinfo{person}{Zhiqiang Xie}, \bibinfo{person}{Chuyue Sun},
+  \bibinfo{person}{Jeff Huang}, \bibinfo{person}{Cody~Hao Yu},
+  \bibinfo{person}{Shiyi Cao}, \bibinfo{person}{Christos Kozyrakis},
+  \bibinfo{person}{Ion Stoica}, \bibinfo{person}{Joseph~E. Gonzalez},
+  \bibinfo{person}{Clark Barrett}, {and} \bibinfo{person}{Ying Sheng}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{{SGLang}: Efficient Execution of Structured Language
+  Model Programs}.
+\newblock
+\showeprint[arxiv]{2312.07104}
+
+
+\bibitem[Zhong et~al\mbox{.}(2024)]%
+        {zhong2024distserve}
+\bibfield{author}{\bibinfo{person}{Yinmin Zhong}, \bibinfo{person}{Shengyu
+  Liu}, \bibinfo{person}{Junda Chen}, \bibinfo{person}{Jianbo Hu},
+  \bibinfo{person}{Yibo Zhu}, \bibinfo{person}{Xuanzhe Liu},
+  \bibinfo{person}{Xin Jin}, {and} \bibinfo{person}{Hao Zhang}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{{DistServe}: Disaggregating Prefill and Decoding
+  for Goodput-Optimized Large Language Model Serving}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:2401.09670}}
+  (\bibinfo{year}{2024}).
+\newblock
+
+
+\end{thebibliography}

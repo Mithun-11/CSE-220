@@ -1,0 +1,72 @@
+\documentclass[]{article}
+\usepackage{amsmath}      % For advanced math, gather, align, and cases
+\usepackage{amssymb}      % For mathematical symbols
+\usepackage{graphicx}     % For including images
+\usepackage{subcaption}   % For subfigures (Layout 6.1)
+\usepackage{multirow}     % For multirow table cells
+\usepackage{makecell}     % For multi-line text inside a single table cell
+\usepackage{physics} % \dv, \pdv, \ket (optional)
+\usepackage{float}
+
+\graphicspath{{./}}
+\title{Mathematical Foundations of Image Synthesis}
+\author{2305009}
+\date{January 4, 2026}
+\begin{document}
+\maketitle
+\section{Introduction}
+Image synthesis is the process of generating images from mathematical and algo-
+rithmic descriptions. Modern graphics systems rely on 
+\textbf{precise mathematical models}
+ and efficient computation. \textit{Even small numerical errors} can result in
+visible artifacts in rendered images.
+
+Typical formulations involve scalar values such as $x$, indexed parameters
+like $I_{i_j}$ , and exponential terms $e^{x^2}$
+. These elements are combined to simulate
+realistic lighting behavior.
+
+\section{Core Components}
+\subsection{Rendering Pipeline}
+The rendering pipeline consists of the following stages:
+\begin{itemize}
+    \item Scene Definition
+    \item Camera Configuration
+    \item[-] Light Placement
+\end{itemize}
+\textbf{Important} Shading Model
+\begin{itemize}
+    \item[-]Diffuse Shading
+    \item[-] Specular Highlights 
+\end{itemize}
+\begin{enumerate}
+    \item Input Processing
+    \item Ray Construction
+         \begin{enumerate}
+            \item How are you
+            \item Secondary Rays
+    \end{enumerate}
+    \item Intersection Evaluation 
+        \begin{itemize}
+        \item Object Hit Test
+        \end{itemize}
+\end{enumerate}
+
+\section{Mathematical Modeling}
+Light interaction with surfaces can be expressed 
+using the following equations.
+\begin{equation}
+L = I_{ij} \cdot \cos(\theta) + R^2 
+\end{equation}
+
+\[ k= \frac{ab}{cd} \]
+
+\begin{align}
+    f(x) &= x^2 + 2x + 1 \nonumber \\
+    &= (x+1)^2
+\end{align}
+
+
+
+
+\end{document}

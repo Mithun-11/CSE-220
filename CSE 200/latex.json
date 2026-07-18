@@ -1,0 +1,17 @@
+"Modular Figure": {
+  "prefix": "figmod",
+  "body": [
+    "\\begin{figure}[${1:htbp!}]",
+    "\t\\centering",
+    "\t\\includegraphics[",
+    "\t\twidth=${2:0.8\\textwidth},",
+    "\t\tkeepaspectratio=true,",
+    "\t\tangle=${3:0}",
+    "\t]{${4:image_filename.png}}",
+    "\t\\caption{${5:Caption goes here}}",
+    "\t\\label{fig:${6:label}}",
+    "\\end{figure}",
+    "$0"
+  ],
+  "description": "Insert a fully modular figure environment"
+}
