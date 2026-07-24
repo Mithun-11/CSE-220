@@ -1,0 +1,133 @@
+snippet `c(\d)(\d);` "row end + cline" iA
+ \\\\
+\cline{``rv = m[1]``-``rv = m[2]``}
+$0
+endsnippet
+
+snippet `mr(\d+);` "multirow" iA
+\multirow{``rv = m[1]``}{*}{$1}
+endsnippet
+
+snippet `mc(\d+);` "multicolumn" iA
+\multicolumn{``rv = m[1]``}{${2:|c|}}{$3}
+endsnippet
+
+snippet `tb(\d+)x(\d+);` "full table" iA
+\begin{tabular}{``rv = '|' + 'c|'.repeat(Number(m[2]))``}
+\hline
+``
+let rows = Number(m[1]), cols = Number(m[2]), n = 1, out = '';
+for (let r = 0; r < rows; r++) {
+  out += Array.from({length: cols}, () => '$' + (n++)).join(' & ') + ' \\\\\\\\\n\\hline\n';
+}
+rv = out.trim();
+``
+\end{tabular}
+endsnippet
+
+snippet mk "inline math" wA
+$${1}$$0
+endsnippet
+
+snippet dm "display math" wA
+\[
+$1
+\]$0
+endsnippet
+
+snippet ff "frac" imA
+\frac{${1:${VISUAL}}}{$2}$0
+endsnippet
+
+priority 100
+snippet `((\d+)|(\d*)(\\)?([A-Za-z]+)((\^|_)(\{\w+\}|\w))*)\/` "postfix frac" imA
+\frac{``rv = m[1]``}{$1}$0
+endsnippet
+
+snippet qq "row end" iA
+ \\\\
+\hline
+$0
+endsnippet
+
+snippet bb "textbf" wA
+\textbf{${1:${VISUAL}}}$0
+endsnippet
+
+
+snippet ii "textit" wA
+\textit{${1:${VISUAL}}}$0
+endsnippet
+
+snippet ee "^" imA
+^{$1}$0
+endsnippet
+
+snippet `(\d*)sq` "root" imA
+\sqrt``rv = m[1] ? '[' + m[1] + ']' : ''``{$1}$0
+endsnippet
+
+snippet `([bBvVp]?)mat(\d+)x(\d+);` "any matrix" imA
+\begin{``rv = m[1]``matrix}
+``
+let rows = Number(m[2]), cols = Number(m[3]), n = 1, out = [];
+for (let r = 0; r < rows; r++) {
+  out.push(Array.from({length: cols}, () => '$' + (n++)).join(' & '));
+}
+rv = out.join(' \\\\\\\\\n');
+``
+\end{``rv = m[1]``matrix}$0
+endsnippet
+
+snippet `(\d?)dint` "definite integral" imA
+``rv = '\\int'.repeat(Number(m[1]) || 1)``_{${1:0}}^{${2:\infty}} ${3} \, d${4:x}$0
+endsnippet
+
+snippet `(\d?)int` "indefinite integral" imA
+``rv = '\\int'.repeat(Number(m[1]) || 1)`` ${1} \, d${2:x}$0
+endsnippet
+
+snippet `(\d?)pw` "piecewise" imA
+${1:f}(${2:x}) = \begin{cases}
+``
+let n = Number(m[1]) || 2, out = [], k = 3;
+for (let i = 0; i < n; i++) {
+  out.push('$' + (k++) + ' & $' + (k++));
+}
+rv = out.join(' \\\\\\\\\n');
+``
+\end{cases}$0
+endsnippet
+
+
+snippet != "neq" imA
+ \neq 
+endsnippet
+
+snippet >= "geq" imA
+ \geq 
+endsnippet
+
+snippet <= "leq" imA
+ \leq 
+endsnippet
+
+snippet lr( "left( right)" imA
+\left( ${1:${VISUAL}} \right)$0
+endsnippet
+
+snippet lr[ "left[ right]" imA
+\left[ ${1:${VISUAL}} \right]$0
+endsnippet
+
+snippet lr| "left| right|" imA
+\left| ${1:${VISUAL}} \right|$0
+endsnippet
+
+snippet lra "leftangle rightangle" imA
+\left\langle ${1:${VISUAL}} \right\rangle$0
+endsnippet
+
+snippet lr{ "left\{ right\}" imA
+\left\\{ ${1:${VISUAL}} \right\\}$0
+endsnippet
