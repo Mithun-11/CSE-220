@@ -971,13 +971,12 @@ urlcolor=teal
         options: "tA",
         description: "Dynamic R x C table with |c| columns, no hline, and empty lines between rows"
     },
-    // Suffix Subscript without braces: x.s -> x_
-    {
-        trigger: /([a-zA-Z]|\\[a-zA-Z]+)\.s/,
-        replacement: "@[0]_@0",
-        options: "rmA",
-        description: "Attach simple subscript to variable or command"
-    },
+{
+    trigger: /([A-Za-z]|\\[A-Za-z]+)\.([A-Za-z])/,
+    replacement: "@[0]_@[1]",
+    options: "rmA",
+    description: "Simple dot subscript"
+},
     // Item snippet: i; -> \item
     {
         trigger: "i;",
