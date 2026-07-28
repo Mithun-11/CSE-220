@@ -606,8 +606,8 @@ const snippets : SnippetSignature[] = [
 \\usepackage{doi}
 \\providecommand{\\algorithmautorefname}{Algorithm}
 \\graphicspath{ {./} }
-\\setlength{\parindent}{0pt}
-\\setlength{\parskip}{0.55em}
+\\setlength{\\parindent}{0pt}
+\\setlength{\\parskip}{0.55em}
 \\newtheorem{theorem}{Theorem}
 \\definecolor{customblue}{RGB}{0, 76, 153}
 \\hypersetup{
@@ -658,7 +658,7 @@ urlcolor=teal
     
   { 
         trigger: "b", 
-        replacement: "\\textbf{{@{VISUAL}}@0", 
+        replacement: "\\textbf{@{VISUAL}}@0",
         options: "tv",
         description: "Visual Bold"
     },
@@ -745,7 +745,7 @@ urlcolor=teal
     // Figure environment with caption and label
     {
         trigger: "fig;",
-        replacement: "\\begin{figure}[htbp]\n\t\\centering\n\t\\includegraphics[width=\\linewidth, scale=1, angle=0]{@0}\n\t\\caption{@1}\n\t\\label{fig:@2}\n\\end{figure}@3",
+        replacement: "\\begin{figure}[H]\n\t\\centering\n\t\\includegraphics[width=\\linewidth, scale=1, angle=0]{@0}\n\t\\caption{@1}\n\t\\label{fig:@2}\n\\end{figure}@3",
         options: "tAw",
         description: "Figure environment"
     },
@@ -870,7 +870,7 @@ urlcolor=teal
             const body = subfigs.join("\n\t\\hfill\n");
 
             return (
-                `\\begin{figure}[htbp]\n` +
+                `\\begin{figure}[H]\n` +
                 `\t\\centering\n` +
                 `${body}\n` +
                 `\t\\caption{@${tabstop++}}\n` +
@@ -958,7 +958,7 @@ urlcolor=teal
             const body = rowLines.join("\n");
 
             return (
-                `\\begin{table}[htbp]\n` +
+                `\\begin{table}[H]\n` +
                 `\t\\centering\n` +
                 `\t\\begin{tabular}{${colSpec}}\n` +
                 `${body}` +
@@ -978,7 +978,13 @@ urlcolor=teal
         options: "rmA",
         description: "Attach simple subscript to variable or command"
     },
-    
+    // Item snippet: i; -> \item
+    {
+        trigger: "i;",
+        replacement: "\\item @0",
+        options: "tAw",
+        description: "List item"
+    },
 ];
 
 export default snippets;
