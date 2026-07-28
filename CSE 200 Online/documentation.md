@@ -2613,3 +2613,7 @@ Text starts here...
 * **Document Class Compatibility:** The `abstract` environment works in standard classes like **`article`** and **`report`**. However, standard LaTeX **`book`** classes do not support `\begin{abstract}` by default (books typically use a preface instead).
 ## For boxes use fbox
 `\fbox{}`
+
+# Table spacing
+`\renewcommand{\arraystretch}{1.35} % vertical spacing
+\setlength{\tabcolsep}{8pt}       % horizontal spacing`
