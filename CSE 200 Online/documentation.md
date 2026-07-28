@@ -2614,6 +2614,6 @@ Text starts here...
 ## For boxes use fbox
 `\fbox{}`
 
-# Table spacing
+# Table spacing before tabular
 `\renewcommand{\arraystretch}{1.35} % vertical spacing`
 `\setlength{\tabcolsep}{8pt}       % horizontal spacing`
