@@ -2615,5 +2615,5 @@ Text starts here...
 `\fbox{}`
 
 # Table spacing
-`\renewcommand{\arraystretch}{1.35} % vertical spacing
-\setlength{\tabcolsep}{8pt}       % horizontal spacing`
+`\renewcommand{\arraystretch}{1.35} % vertical spacing`
+`\setlength{\tabcolsep}{8pt}       % horizontal spacing`
