@@ -80,6 +80,27 @@ class CFTAnalyzer:
             axis=-1
         )
 
+class InverseCFTAnalyzer:
+    def __init__(self, frequencies, spectrum):
+        self.frequencies = frequencies
+        self.spectrum = spectrum
+
+    def compute(self, t):
+
+        ft = (
+            t[:, None]
+            * self.frequencies[None, :]
+        )
+
+        kernel = np.exp(
+            1j * 2 * np.pi * ft
+        )
+
+        return np.trapezoid(
+            self.spectrum[None, :] * kernel,
+            self.frequencies,
+            axis=-1
+        )
 
 t = np.linspace(-5, 5, 4001)
 f = np.linspace(-10, 10, 2001)
