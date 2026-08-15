@@ -373,4 +373,21 @@ coefficient_mse = np.mean(
 
 print("Coefficient MSE:", coefficient_mse)
 ```
+## Integration
+```python
+def integrate_signal(t, signal):
 
+    integrated = np.zeros_like(
+        signal,
+        dtype=complex
+    )
+
+    for i in range(1, len(t)):
+
+        integrated[i] = np.trapezoid(
+            signal[:i + 1],
+            t[:i + 1]
+        )
+
+    return integrated
+```

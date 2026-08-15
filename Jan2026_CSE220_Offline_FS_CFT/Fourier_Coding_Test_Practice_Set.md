@@ -68,15 +68,15 @@ This program stores harmonics and coefficients in arrays instead of a dictionary
 
 For
 
-\[
+$$
 x(t)=\sum_{k=-K}^{K}c_k e^{jk\omega_0t},
-\]
+$$
 
 the derivative is
 
-\[
+$$
 \frac{dx}{dt}=\sum_{k=-K}^{K}(jk\omega_0)c_k e^{jk\omega_0t}.
-\]
+$$
 
 ```python
 import numpy as np
@@ -126,15 +126,15 @@ Do not use `np.diff` or `np.gradient`. Both synthesis methods must support an ar
 
 Use
 
-\[
-X(f)=\int_{-\infty}^{\infty}x(t)e^{-j2\pi ft}\,dt.
-\]
+
+$$X(f)=\int_{-\infty}^{\infty}x(t)e^{-j2\pi ft}\,dt.$$
+
 
 If `y(t) = x(t - t0)`, then
 
-\[
-Y(f)=X(f)e^{-j2\pi f t_0}.
-\]
+
+$$Y(f)=X(f)e^{-j2\pi f t_0}.$$
+
 
 Complete the program without loops over individual frequency values.
 
@@ -176,9 +176,9 @@ Both MSE values should be close to zero apart from numerical truncation error.
 
 For `y(t)=x(at)`,
 
-\[
-Y(f)=\frac{1}{|a|}X\left(\frac{f}{a}\right).
-\]
+
+$$Y(f)=\frac{1}{|a|}X\left(\frac{f}{a}\right).$$
+
 
 A negative `a` performs both scaling and time reversal.
 
@@ -220,15 +220,15 @@ Written follow-up: if `a = -1`, what happens to the magnitude spectrum, and whic
 
 For
 
-\[
-y(t)=x(t)\cos(2\pi f_c t),
-\]
+
+$$y(t)=x(t)\cos(2\pi f_c t),$$
+
 
 the modulation property predicts
 
-\[
-Y(f)=\frac12X(f-f_c)+\frac12X(f+f_c).
-\]
+
+$$Y(f)=\frac12X(f-f_c)+\frac12X(f+f_c).$$
+
 
 ```python
 import numpy as np
