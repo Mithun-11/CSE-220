@@ -70,3 +70,9 @@ def circular_convolution(a, b, engine):
         return np.real_if_close(result)
 
     return result
+
+
+
+number = "".join(
+        str(bit) for bit in reversed(values)
+    )
